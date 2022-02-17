@@ -1,0 +1,6 @@
+#!/bin/bash -e
+echo "Starting Cron daemon..."
+crond -i
+echo "Crond pid $(pgrep crond)"
+echo "Starting service..."
+/bin/bash # to be replaced with the binary of the service you plan to start bin/start_service
